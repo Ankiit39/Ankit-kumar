@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Website</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">MyWebsite</h1>
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container">
+        <h2>Hello — welcome to my website</h2>
+        <p>This is a simple starter template built with HTML, CSS and JS.</p>
+        <button id="cta">Click me</button>
+      </div>
+    </section>
+
+    <section id="about" class="container card">
+      <h3>About</h3>
+      <p>I built this website using VS Code. Edit the files and refresh to see changes.</p>
+    </section>
+
+    <section id="contact" class="container card">
+      <h3>Contact</h3>
+      <form id="contactForm">
+        <label>
+          Name
+          <input type="text" name="name" required />
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" required />
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="4"></textarea>
+        </label>
+        <button type="submit">Send</button>
+      </form>
+      <div id="formMsg" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year"></span> MyWebsite</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
